@@ -19,10 +19,16 @@ if (random < 0.5) {
 if (random >= 0.5) {
    console.log("this is greater than 0.5");
    console.log(random);
-
 }
 
 // 조건이 틀리면 실행되지 않음
 if (1 + 1 === "2") {
    console.log("math still works!");
+}
+
+// test : 짝수 출력하기
+function isEven(num) {
+   if (num % 2 === 0) {
+      console.log("even");
+   }
 }
