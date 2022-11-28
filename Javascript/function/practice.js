@@ -1,4 +1,4 @@
-//===== return Value Practice================================================
+//===== return Value Practice===================================================
 // 숫자인 두개의 인수를 곱하는 multiply라는 함수를 만들어보자
 
 function multiply(num1, num2) {
@@ -6,7 +6,7 @@ function multiply(num1, num2) {
    return sum
 }
 
-//===== isShortsWeather Function =============================================
+//===== isShortsWeather Function ===============================================
 // 반바지를 입을 날씨인가 고민이다.
 // 하나의 인수를 갖는 함수 temperature 를 만든다.
 // temperature는 75보다 크거나 같으면 true, 아니면 false.
@@ -19,7 +19,7 @@ function isShortsWeather(num) {
    }
 }
 
-//===== Last Element Exercise ===============================================
+//===== Last Element Exercise ==================================================
 // 하나의 배열 인수를 가진 lastElement라는 함수가 있다.
 // 이 함수는 배열의 마지막 인자를 *지우지 않고* 반환해야 한다. 
 // 배열이 비어있다면 null을 반환해야한다.
@@ -48,7 +48,7 @@ console.log(last([7, 9, 0, -2]));
 console.log(last([7, 9, 0, -2], 3));
 console.log(last([7, 9, 0, -2], 6));
 
-//===== Capitalize Exercise ==============================================
+//===== Capitalize Exercise =================================================
 // 문자열 인자를 갖는 capitalize 라는 함수를 정의한 후 첫 문자를 대문자로 변환해보자
 
 // 첫문자를 선택한다? 배열인가?
@@ -59,7 +59,7 @@ function capitalize(str) {
 }
 
 
-//===== sum array Exercise ==============================================
+//===== sum array Exercise ===================================================
 // 하나의 인수(숫자 배열)를 갖는 함수 sumArray를 작성해보자
 // 함수는 배열의 모든 숫자의 합을 반환한다.
 
@@ -91,3 +91,34 @@ function sumArray(arr) {
 
 // 일주일을 배열에 저장하자
 // 함수가 호출되면 숫자로 배열 혹은 객체에 연결할수 있게해보자
+
+// js object access by index
+// days의 요소 + 1 해서 인덱스를 만들고 그 인덱스를 access해서 days 문자열을 출력
+const days = {
+   Monday: 1,
+   Tuesday: 2,
+   Wednesday: 3,
+   Thursday: 4,
+   Friday: 5,
+   Saturday: 6,
+   Sunday: 7
+}
+
+function returnDay(num) {
+   for (let day of days) {
+      return day
+   }
+}
+// for (let person in testScore) {
+//    console.log(`${person} scored ${testScore[person]}`);
+// }
+
+
+let week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function returnDay(day) {
+   if (0 >= day || 7 < day) {
+      return null;;
+   } else {
+      return day = week[day - 1];
+   }
+}
