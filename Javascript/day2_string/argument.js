@@ -50,3 +50,11 @@ annoyingLaugh.replace('h', 'H') // 'Haha so funny! teehee!'
 // 메서드는 어떤 것(thing) 이다. 
 // 어떤 메서드는 입력값이 필요 없어서 빈괄호를 사용, 어떤 메서드는 인수를 요구하는데 괄호 사이에 쓴 입력값이 동작을 바꾼다.
 // *메서드는 뭔가를 호출하는 이름을 가진 작업. 문자열을 호출하는것은 그 일부. */
+
+/***************************** quiz ****************************/
+// word 변수의 skateboard를 facialHair 변수의 beard로 바꾸기
+const word = 'skateboard';
+// let facialHair = word.slice(5).replace('o', 'e'); // beard
+// let facialHair = word.slice(-5).replace('o', 'e'); // beard
+
+
