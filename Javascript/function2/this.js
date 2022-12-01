@@ -45,3 +45,16 @@ const cat2 = {
 const meow2 = cat2.meow;
 meow2();    // says MEOWWW
 cat2.meow(); // Blue Steele says MEOWWW
+
+//=======================================================================
+// practice
+// += 오른쪽 값을 왼쪽에 넣기 
+
+const hen = {
+   name: 'Helen',
+   eggCount: 0,
+   layAnEgg() {
+      this.eggCount += 1;
+      return 'EGG';
+   }
+}
