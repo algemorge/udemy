@@ -43,11 +43,19 @@ const myMath2 = {
       return x * y;
    }
 }
-Math.add(50, 60) // 110
-
-
+myMath2.add(50, 60) // 110
 
 
 //=======================================================================
-// 문자열 메서드 
-// 배열 메서드
+// 정사각형 넓이(area), 둘레(perimeter) 구하기 
+const square = {
+   area(x) {
+      return x * x;
+   },
+   perimeter(x) {
+      return x * 4;
+   }
+}
+
+square.area(10) // 100
+square.perimeter(6) //24
