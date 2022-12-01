@@ -1,0 +1,12 @@
+body {
+   font-family: 'Roboto Mono', monospace;
+}
+
+main {
+   width: 60%;
+   margin: 0 auto;
+}
+
+h1 {
+   font-weight: 700;
+}
