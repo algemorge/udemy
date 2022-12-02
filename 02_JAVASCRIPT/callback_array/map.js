@@ -48,6 +48,8 @@ const movies = [
 const movieName = movies.map(function (movie) {
    return movie.title
 })
+// arrow function 화 하기 
+const movieName2 = movies.map(m => m.title)
 
 // 평점 90점이 넘는 영화만 출력하기
 const movieScore = movies.map(function (movie) {
@@ -56,14 +58,32 @@ const movieScore = movies.map(function (movie) {
    }
 })
 
+
 /* 배열에서 빈값, undefined 제거 하는 방법은 없을까 */
+// goodMovies에 90점이 넘는 배열을 넣어놓고
+// movieTitle 로 goodMovies 제목 뽑아오기 -> 실패!!
+const goodMovies = movies.map(m => m.score > 90)
+const movieTitle = goodMovies.map(m => m.title)
+
+// map 배열을 map으로 불러오기 실패
+// filter 배열을 map으로 불로오기 성공!!
+const goodMovies2 = movies.filter(m => m.score > 90)
+const movieTitle2 = goodMovies2.map(m => m.title)
+
+// 한줄로 만들기
+movies.filter(m => m.score > 90).map(m => m.title)
+
+// 한줄이 너무 길어보일때 들여쓰기
+movies
+   .filter(m => m.score > 90)
+   .map(m => m.title)
 
 
 //============================================================================
 // practice
+// 배열 fullNames에서 first네임만 있는 firstNames 배열을 만들어보자
 const fullNames = [{ first: 'Albus', last: 'Dumbledore' }, { first: 'Harry', last: 'Potter' }, { first: 'Hermione', last: 'Granger' }, { first: 'Ron', last: 'Weasley' }, { first: 'Rubeus', last: 'Hagrid' }, { first: 'Minerva', last: 'McGonagall' }, { first: 'Severus', last: 'Snape' }];
 
-// Write your code here
 const firstNames = fullNames.map(function (first) {
    return first.first
 })

@@ -85,5 +85,4 @@ movies.forEach(function (movie) {
 
 // 함수를 정의 O, 실행 X
 const f = function (movie) {
-
 }
